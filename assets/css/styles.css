@@ -18,8 +18,23 @@ body { font-family: var(--font-primary), sans-serif !important }
 ::-webkit-scrollbar-thumb:window-inactive {background: #999;}
 
 /* STYLE SHEETS */ 
-p { color: var(--cinza1); font-size: 16px; font-weight: 500; line-height: 20px; letter-spacing: 0.2px;  }
+p { color: var(--branco); font-size: 16px; font-weight: 500; line-height: 20px; letter-spacing: 0.2px;  }
 h1 { color: var(--cinza2) !important; font-size: 40px !important; font-weight: bold !important; line-height: 120% !important; letter-spacing: 0.2px; }
 h2 { color: var(--cinza3) !important; font-size: 22px !important; font-weight: bold !important; line-height: 32px !important; letter-spacing: 0.1px; }
 hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; width: 100px;  }
 .spacing { padding: 100px 0px; }
+
+/* NAV */
+#menu { background-color: var(--preto) !important; }
+#menu .navbar-toggler { background-color: none; border: none; color: var(--branco); }
+#menu .navbar-toggler svg { width: 75px; height: 75px; transition: all .4s ease-in-out; }
+#menu .navbar-toggler:hover svg { opacity: 0.8 !important; } 
+#menu .navbar-toggler:focus { outline: 0; box-shadow: none; }
+.nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 20px !important; }
+
+/* OFFCANVAS */
+#menuMobile { background-color: var(--preto); }
+#menuMobile .nav-item { padding-top: 30px; padding-left: 20px; font-size: 22px; font-weight: 700; }
+#menuMobile .nav-item .nav-link { display: inline; padding: 0 !important; }
+#menuMobile .nav-item .nav-link.active { border-bottom: solid 2px var(--primary-500);  }
+#menuMobile .btn-close { filter: invert(1); position: absolute; top: 0; right: 0; margin-right: 25px; margin-top: 25px; font-size: 25px; }
