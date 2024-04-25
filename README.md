@@ -26,4 +26,4 @@ Neste documento, será mostrado as etapas necessárias para o desenvolvimento do
 
 ## Contato
 
-Para mais informações ou sugestões, entre em contato através do email: alissoalissonnata008n123@email.com.
+Para mais informações ou sugestões, entre em contato através do email: alissoalissonnata008n123@gmail.com.

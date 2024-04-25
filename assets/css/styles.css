@@ -55,7 +55,11 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 }
 
 @media only screen and (max-device-width: 993px), screen and (max-width: 993px) {
+    .container { padding: 0px 30px !important; }
+    #menu img { width: 70%; }
+    #menu .navbar-toggler svg { width: 60px; }
     #slide h1 { font-size: 46px !important; }
+    #slide img { height: 600px; object-fit: cover; }
 }
 
 @media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
@@ -63,8 +67,5 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 }
 
 @media only screen and (max-device-width: 630px), screen and (max-width: 630px) {
-    #menu img { width: 70%; margin-left: 30px; }
-    #menu .navbar-toggler svg { width: 60px; margin-right: 30px; }
-    
     #slide h1 { font-size: 32px !important; }
 }
