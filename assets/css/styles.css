@@ -67,6 +67,8 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
     #menu .navbar-toggler svg { width: 60px; }
     #slide h1 { font-size: 46px !important; }
     #slide img { height: 600px; object-fit: cover; }
+    .carousel-control-prev span, .carousel-control-next span { visibility: hidden !important; width: 50% !important; } 
+    .carousel-control-prev, .carousel-control-next { width: 50% !important; } 
 }
 
 @media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
