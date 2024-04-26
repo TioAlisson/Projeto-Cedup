@@ -7,6 +7,7 @@
     --secondary-600: #252324;
     --branco: #FFFFFF;
     --preto: #252324;
+    --cinza: #E7E7E7;
     --font-primary: "Montserrat";
 }
 
@@ -54,6 +55,11 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #mvv .mvv-border { border: 1px solid var(--secondary-400); border-radius: 50px; padding: 15px; text-align: center; }
 #mvv .mvv-border p { min-height: 120px; }
 
+/* SECTION SOBRE */
+#sobre { background-color: var(--cinza); }
+#sobre img { filter: drop-shadow(5px -5px 5px #696969); }
+#sobre a { color: var(--branco); background-color: var(--primary-500); font-size: 16px; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 8px; }
+
 
 
 /* MEDIA QUERY */
@@ -69,6 +75,7 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
     #slide img { height: 600px; object-fit: cover; }
     .carousel-control-prev span, .carousel-control-next span { visibility: hidden !important; width: 50% !important; } 
     .carousel-control-prev, .carousel-control-next { width: 50% !important; } 
+    #sobre img { width: 80%; margin-left: auto; margin-right: auto; }
 }
 
 @media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
