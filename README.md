@@ -23,7 +23,8 @@ Neste documento, será mostrado as etapas necessárias para o desenvolvimento do
 4. Navegar até a pasta do projeto.
 5. Abrir o arquivo index.html em um navegador web para visualizar a aplicação.
 
-
+## Link do projeto
+1. Link do projeto: https://tioalisson.github.io/Projeto-Cedup.github.io/
 ## Contato
 
 Para mais informações ou sugestões, entre em contato através do email: alissoalissonnata008n123@gmail.com.
