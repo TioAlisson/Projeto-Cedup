@@ -1,211 +1,299 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cedup</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cedup</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-<body>  
 
-    <header id="menu">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img class="py-3" width="100%" height="auto" src="assets/img/Logo.svg" alt="Logo Cedup">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobileLabel">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7H7M20 7H11M20 17H17M4 17H13M4 12H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>                
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INÍCIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CURSOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ESTÁGIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">EDITAIS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-      </header>
+<body>
 
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
-        <div class="offcanvas-body position-relative">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            <a href="index.html">
-                <img src="assets/img/Logo.svg" alt="Logo Cedup">
-            </a>
-            <div class="dropdown mt-3">
-                <ul class="navbar-nav mt-5">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INÍCIO</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">CURSOS</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">SOBRE</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">ESTÁGIO</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">EDITAIS</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
-                    </li>
-                </ul>
-            </div>
+  <header id="menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="py-3" width="100%" height="auto" src="assets/img/Logo.svg" alt="Logo Cedup">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile"
+          aria-controls="menuMobileLabel">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 7H7M20 7H11M20 17H17M4 17H13M4 12H20" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INÍCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CURSOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SOBRE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ESTÁGIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">EDITAIS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTATO</a>
+            </li>
+          </ul>
         </div>
-      </div>    
+      </div>
+    </nav>
+  </header>
 
-     <!-- SECTIONS -->
-    <section id="slide">
-        <div id="menuSlide" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active bg-red" data-bs-interval="10000">
-              <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
-              <div class="carousel-caption">
-               <div>
-                <h1>Explore nossa<br />variedade de cursos</h1>
-                <p class="d-none d-lg-block">
-                  para impulsionar sua jornada de aprendizado.
-                </p>
-                <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
-               </div>
-              </div>
-            </div> 
-            <div class="carousel-item active bg-red" data-bs-interval="10000">
-              <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
-              <div class="carousel-caption">
-               <div>
-                <h1>Explore nossa<br />variedade de cursos</h1>
-                <p class="d-none d-lg-block">
-                  para impulsionar sua jornada de aprendizado.
-                </p>
-                <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
-               </div>
-              </div>
-            </div> 
-            <div class="carousel-item active bg-red" data-bs-interval="10000">
-              <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
-              <div class="carousel-caption">
-               <div>
-                <h1>Explore nossa<br />variedade de cursos</h1>
-                <p class="d-none d-lg-block">
-                  para impulsionar sua jornada de aprendizado.
-                </p>
-                <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
-               </div>
-              </div>
-            </div> 
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#menuSlide" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#menuSlide" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-          </button>
-        </div>
-      </section>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+    <div class="offcanvas-body position-relative">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <a href="index.html">
+        <img src="assets/img/Logo.svg" alt="Logo Cedup">
+      </a>
+      <div class="dropdown mt-3">
+        <ul class="navbar-nav mt-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INÍCIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CURSOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ESTÁGIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EDITAIS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTATO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-      <section id="mvv" class="spacing">
-        <div class="container">
-         <div class="row">
-           <div class="col-lg-12 text-center">
-             <h1>MISÃO VISÃO E VALORES</h1>
-             <hr class="mx-auto">
-           </div>
-         </div>
-         <div class="row mt-5 justify-content-center justify-content-lg-between ">
-           <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
-             <div class="mvv-border">
-               <div class="d-flex align-items-center">
-                 <img src="assets/img/Icon-star.png" alt="Star">
-                 <h2 class="mx-4">Missão</h2>
-               </div>
-               <hr class="line-bottom my-4">
-               <p>Nossa equipe experiente de instrutores
-                 proporciona uma educação de alta 
-                 qualidade, preparando nossos alunos
-                 para alcançarem o sucesso.</p>
-             </div>
-           </div>
-           <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
-             <div class="mvv-border">
-               <div class="d-flex align-items-center">
-                 <img src="assets/img/Icon-house.png" alt="House">
-                 <h2 class="mx-4">Missão</h2>
-               </div>
-               <hr class="line-bottom my-4">
-               <p>Oferecemos uma variedade de cursos
-                 de alta qualidade, capacitando nossos 
-                 alunos com habilidades práticas 
-                 essenciais para o mercado atual.</p>
-             </div>
-           </div>
-           <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
-             <div class="mvv-border">
-               <div class="d-flex align-items-center">
-                 <img src="assets/img/Icon-eye.png" alt="Eye">
-                 <h2 class="mx-4">Missão</h2>
-               </div>
-               <hr class="line-bottom my-4">
-               <p>Nossa abordagem de ensino, inclui 
-                 aulas práticas,  o uso de tecnologia 
-                 para proporcionar uma experiência 
-                 de aprendizado dinâmica e eficaz.</p>
-             </div>
-           </div>
-         </div>
-        </div>
-       </section>
-
-       <section id="sobre">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 spacing">
-              <h1 class="text-center text-lg-start">SOBRE</h1>
-              <hr class="mx-auto mx-lg-0">
-              <p class="my-5">O Projeto Político Pedagógico (PPP) é um processo democrático iniciado em  1999, revisado em 2000/2005/2006 e finalizado em junho de 2008 após grupos  de estudo. Ele representa uma constante evolução, visando à construção de um  trabalho pedagógico mais eficaz e de melhor qualidade, orientado pela  comunidade escolar.</p>
-              <div class="text-center text-lg-start">
-                <a href="">Saiba mais</a>
-              </div>
-            </div>
-            <div class="col-lg-5 offset-lg-1 mt-lg-5 d-flex align-items-end">
-              <img width="100%" height="auto" src="assets/img/img-sobre.png" alt="Imagem de uma garota">
+  <!-- SECTIONS -->
+  <section id="slide">
+    <div id="menuSlide" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#menuSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-red" data-bs-interval="10000">
+          <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
+          <div class="carousel-caption">
+            <div>
+              <h1>Explore nossa<br />variedade de cursos</h1>
+              <p class="d-none d-lg-block">
+                para impulsionar sua jornada de aprendizado.
+              </p>
+              <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
             </div>
           </div>
         </div>
-      </section>
+        <div class="carousel-item active bg-red" data-bs-interval="10000">
+          <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
+          <div class="carousel-caption">
+            <div>
+              <h1>Explore nossa<br />variedade de cursos</h1>
+              <p class="d-none d-lg-block">
+                para impulsionar sua jornada de aprendizado.
+              </p>
+              <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active bg-red" data-bs-interval="10000">
+          <img src="assets/img/bg.png" class="d-block w-100" alt="Fundo">
+          <div class="carousel-caption">
+            <div>
+              <h1>Explore nossa<br />variedade de cursos</h1>
+              <p class="d-none d-lg-block">
+                para impulsionar sua jornada de aprendizado.
+              </p>
+              <a class="d-none d-lg-inline-block" href="#" rel="noopener noreferrer">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#menuSlide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#menuSlide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+    </div>
+  </section>
+
+  <section id="mvv" class="spacing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>MISÃO VISÃO E VALORES</h1>
+          <hr class="mx-auto">
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center justify-content-lg-between ">
+        <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
+          <div class="mvv-border">
+            <div class="d-flex align-items-center">
+              <img src="assets/img/Icon-star.png" alt="Star">
+              <h2 class="mx-4">Missão</h2>
+            </div>
+            <hr class="line-bottom my-4">
+            <p>Nossa equipe experiente de instrutores
+              proporciona uma educação de alta
+              qualidade, preparando nossos alunos
+              para alcançarem o sucesso.</p>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
+          <div class="mvv-border">
+            <div class="d-flex align-items-center">
+              <img src="assets/img/Icon-house.png" alt="House">
+              <h2 class="mx-4">Missão</h2>
+            </div>
+            <hr class="line-bottom my-4">
+            <p>Oferecemos uma variedade de cursos
+              de alta qualidade, capacitando nossos
+              alunos com habilidades práticas
+              essenciais para o mercado atual.</p>
+          </div>
+        </div>
+        <div class="col-sm-8 col-lg-4 px-lg-5 mb-5 mv-lg-0">
+          <div class="mvv-border">
+            <div class="d-flex align-items-center">
+              <img src="assets/img/Icon-eye.png" alt="Eye">
+              <h2 class="mx-4">Missão</h2>
+            </div>
+            <hr class="line-bottom my-4">
+            <p>Nossa abordagem de ensino, inclui
+              aulas práticas, o uso de tecnologia
+              para proporcionar uma experiência
+              de aprendizado dinâmica e eficaz.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 spacing">
+          <h1 class="text-center text-lg-start">SOBRE</h1>
+          <hr class="mx-auto mx-lg-0">
+          <p class="my-5">O Projeto Político Pedagógico (PPP) é um processo democrático iniciado em 1999, revisado em
+            2000/2005/2006 e finalizado em junho de 2008 após grupos de estudo. Ele representa uma constante evolução,
+            visando à construção de um trabalho pedagógico mais eficaz e de melhor qualidade, orientado pela  comunidade
+            escolar.</p>
+          <div class="text-center text-lg-start">
+            <a href="">Saiba mais</a>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1 mt-lg-5 d-flex align-items-end">
+          <img width="100%" height="auto" src="assets/img/img-sobre.png" alt="Imagem de uma garota">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gestora" class="spacing">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <h1 class="text-center">EQUIPE GESTORA</h1>
+          <hr class="mx-auto">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 d-none d-lg-flex align-items-center justify-content-center">
+          <div class="btn-prev">
+            <svg width="32" height="65" viewBox="0 0 32 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5311 -0.000183105L31.6611 5.37051L9.83113 32.224L31.6611 59.0774L27.5311 64.4481L0.981133 32.224L27.5311 -0.000183105Z"
+                fill="#343233" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="swiper equipe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card-equipe">
+                <img src="assets/img/Alisson.jpg" alt="Mulher">
+                <div class="footer-card-equipe">
+                  <h2>Alisson</h2>
+                  <p>Programador</p>
+                </div>
+              </div>
+              <div class="swiper-slide card-equipe">
+                <img src="assets/img/Alisson.jpg" alt="Mulher">
+                <div class="footer-card-equipe">
+                  <h2>Alisson</h2>
+                  <p>Programador</p>
+                </div>
+              </div>
+              <div class="swiper-slide card-equipe">
+                <img src="assets/img/Alisson.jpg" alt="Mulher">
+                <div class="footer-card-equipe">
+                  <h2>Alisson</h2>
+                  <p>Programador</p>
+                </div>
+              </div>
+              <div class="swiper-slide card-equipe">
+                <img src="assets/img/Alisson.jpg" alt="Mulher">
+                <div class="footer-card-equipe">
+                  <h2>Alisson</h2>
+                  <p>Programador</p>
+                </div>
+              </div>
+              <div class="swiper-slide card-equipe">
+                <img src="assets/img/Alisson.jpg" alt="Mulher">
+                <div class="footer-card-equipe">
+                  <h2>Alisson</h2>
+                  <p>Programador</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 d-none d-lg-flex align-items-center justify-content-center">
+          <div class="btn-next">
+            <svg width="31" height="65" viewBox="0 0 31 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.1336 -0.00012207L0.00360107 5.37057L21.8336 32.224L0.00360107 59.0775L4.1336 64.4482L30.6836 32.224L4.1336 -0.00012207Z"
+                fill="#343233" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

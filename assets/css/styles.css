@@ -60,7 +60,11 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #sobre img { filter: drop-shadow(5px -5px 5px #696969); }
 #sobre a { color: var(--branco); background-color: var(--primary-500); font-size: 16px; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 8px; }
 
-
+/* SECTION EQUIPE GESTORA */
+#gestora .card-equipe img { height: 180px; width: 100%; object-fit: cover; object-position: center; } 
+#gestora .card-equipe .footer-card-equipe { background-color: var(--secondary-500); padding: 20px 16px;  }
+#gestora .card-equipe .footer-card-equipe h2 { color: var(--branco) !important; font-size: 18px; font-weight: 600; }
+#gestora .card-equipe .footer-card-equipe p { color: var(--branco); font-size: 16px; font-weight: 600; opacity: 80%; }
 
 /* MEDIA QUERY */
 @media only screen and (max-device-width: 1400px), screen and (max-width: 1400px) {
