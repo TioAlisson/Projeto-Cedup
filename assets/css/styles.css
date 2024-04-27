@@ -35,7 +35,7 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 .nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 20px !important; }
 
 /* OFFCANVAS */
-#menuMobile { background-color: rgb(37 35 36 / 70%); backdrop-filter: blur(10px); }
+#menuMobile { background-color: rgb(37 35 36 / 70%); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
 #menuMobile .nav-item { padding-top: 30px; padding-left: 20px; font-size: 22px; font-weight: 700; }
 #menuMobile .nav-item .nav-link { display: inline; padding: 0 !important; }
 #menuMobile .nav-item .nav-link.active { border-bottom: solid 2px var(--primary-500);  }
