@@ -86,7 +86,7 @@ footer h3 { color: var(--branco); font-size: 16px; line-height: 125%; }
 footer p { color: var(--branco); font-size: 14px; font-weight: 300; margin-top: 15px !important; }
 footer .text-content { min-width: 160px; }
 
-
+#assinatura p { font-size: 14px; }
 
 /* MEDIA QUERY */
 @media only screen and (max-device-width: 1400px), screen and (max-width: 1400px) {
