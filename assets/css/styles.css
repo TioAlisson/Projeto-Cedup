@@ -42,6 +42,7 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #menuMobile .nav-item .nav-link { display: inline; padding: 0 !important; }
 #menuMobile .nav-item .nav-link.active { border-bottom: solid 2px var(--primary-500);  }
 #menuMobile .btn-close { filter: invert(1); position: absolute; top: 0; right: 0; margin-right: 25px; margin-top: 25px; font-size: 25px; }
+#menuMobile .icons-mobile { position: absolute; width: -webkit-fill-available; bottom: 0; }  
 
 /* SLIDE */
 #slide { position: relative; }
