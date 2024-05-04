@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 var swiper = new Swiper(".equipe", {
   slidesPerView: 2,
