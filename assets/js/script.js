@@ -1,6 +1,6 @@
 var swiper = new Swiper(".equipe", {
   slidesPerView: 2,
-  spaceBetween: 30,
+  spaceBetween: 10,
   centeredSlides: true,
   loop: true,
   effect: "slide",
