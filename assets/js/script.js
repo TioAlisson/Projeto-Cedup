@@ -1,3 +1,5 @@
+AOS.init();
+
 var swiper = new Swiper(".equipe", {
   slidesPerView: 2,
   spaceBetween: 10,
