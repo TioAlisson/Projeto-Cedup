@@ -29,6 +29,7 @@ h2 { color: var(--secondary-500) !important; font-size: 22px !important; font-we
 hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; width: 100px;  }
 .spacing { padding: 100px 0px; }
 .btn-solid { color: var(--branco); background-color: var(--primary-500); font-size: 18px; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 8px; }
+.active, .nav-link:hover { border-bottom: 5px solid var(--primary-500); }
 
 /* NAV */
 #menu .navbar { background-color: var(--preto); z-index: 999; width: 100%; transition: all ease-in-out .4s; }
@@ -38,7 +39,8 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #menu .navbar-toggler svg { width: 75px; height: 75px; transition: all .4s ease-in-out; }
 #menu .navbar-toggler:hover svg { opacity: 0.8 !important; transition:  all ease-in-out .4s; } 
 #menu .navbar-toggler:focus { outline: 0; box-shadow: none; }
-.nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 20px !important; transition:  all ease-in-out .4s; }
+.nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 0px !important; transition:  all ease-in-out .2s; }
+#menu .nav-item { padding: 0px 20px; }
 
 /* NAV COMPRESSED */
 .compressed .navbar { background-color: var(--secondary-rgba) !important; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
@@ -54,6 +56,7 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #menuMobile .btn-close { filter: invert(1); position: absolute; top: 0; right: 0; margin-right: 25px; margin-top: 25px; font-size: 25px; }
 #menuMobile .icons-mobile { position: absolute; width: -webkit-fill-available; bottom: 0; }  
 
+
 /* SLIDE */
 #slide { position: relative; }
 #slide .bg-red { background-color: var(--primary-500); }
@@ -63,6 +66,10 @@ hr { border: 5px solid var(--primary-500) !important; opacity: 1 !important; wid
 #slide .btn-solid { background-color: var(--secondary-500); }
 #slide .carousel-caption  { right: inherit !important; bottom: inherit !important; left: 50% !important; padding-top: 0; padding-bottom: 0; transform: translate(-50%, -50%); top: calc(50% + 75px) }  
 #slide .carousel-control-next, #slide .carousel-control-prev { margin-top: 110px !important; }
+
+/* SINGLE SLIDE */
+#single-slide { background: url('../img/bg.png') var(--secondary-rgba); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 250px 0px 100px 0px; background-blend-mode: multiply; }
+#single-slide h1 { color: var(--branco) !important; font-size: 40px; font-weight: 900 !important; line-height: 95% !important; text-align: center; } 
 
 /* SECTION MVV */
 #mvv .line-bottom { border: 1.5px solid var(--primary-500) !important; width: 100%; }
