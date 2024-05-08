@@ -15,7 +15,7 @@
 
 /* RESET */
 * { padding: 0px; margin: 0px; box-sizing: border-box; }
-body { font-family: var(--font-primary), sans-serif !important }
+html, body { font-family: var(--font-primary), sans-serif !important; overflow-x: hidden !important; }
 ::-webkit-scrollbar {width: 6px}
 ::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);-webkit-border-radius: 10px;border-radius: 10px}
 ::-webkit-scrollbar-thumb {-webkit-border-radius: 10px;border-radius: 10px;background: #999;-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)}
@@ -55,7 +55,7 @@ span { color: var(--secondary-500); font-size: 18px; }
 #menuMobile .nav-item .nav-link { display: inline; padding: 0 !important; }
 #menuMobile .nav-item .nav-link.active { border-bottom: solid 2px var(--primary-500);  }
 #menuMobile .btn-close { filter: invert(1); position: absolute; top: 0; right: 0; margin-right: 25px; margin-top: 25px; font-size: 25px; }
-#menuMobile .icons-mobile { position: absolute; width: -webkit-fill-available; bottom: 1; }  
+#menuMobile .icons-mobile { position: absolute; width: -webkit-fill-available; bottom: 0; }  
 
 
 /* SLIDE */
@@ -123,10 +123,11 @@ footer .text-content { min-width: 160px; }
 #assinatura p { font-size: 14px; }
 
 /* CONTATO */
-#contato h1 { font-size: 36px !important; }
+#contato h2 { font-size: 36px !important; }
+#contato span { max-width: 350px; }
 #contato .links-contato a { display: flex; align-items: center; padding: 20px 0px; color: var(--preto); }
 #contato .links-contato a span { margin-left: 20px; }
-#contato .contato-iframe { width: 640px; height: 410px; }
+#contato .contato-iframe { width: 100%; height: 410px; }
 
 /* MEDIA QUERY */
 @media only screen and (max-device-width: 1400px), screen and (max-width: 1400px) {
@@ -148,6 +149,9 @@ footer .text-content { min-width: 160px; }
 
     /* SOBRE */
     #sobre img { width: 80%; margin-left: auto; margin-right: auto; }
+
+    /* CONTATO */
+    #contato .contato-iframe { height: 250px; }
 }
 
 @media only screen and (max-device-width: 768px), screen and (max-width: 768px) {
