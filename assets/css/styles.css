@@ -32,8 +32,8 @@ input, textarea { border: none; width: 100%; background: none; padding-left: 18p
 input:focus-visible, textarea:focus-visible { outline: none; }
 button { border: none; }
 .spacing { padding: 100px 0px; }
-.btn-solid { color: var(--branco); background-color: var(--primary-500); font-size: 18px; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 8px; }
-.btn-line { background-color: transparent; color: var(--primary-500); font-size: 18px; border: 1px solid var(--primary-500); padding: 10px 20px; border-radius: 8px; transition: all ease-in-out .3s; }
+.btn-solid { color: var(--branco); background-color: var(--primary-500); font-size: 14px !important; font-weight: 600; text-decoration: none; padding: 10px 20px; border-radius: 8px; }
+.btn-line { background-color: transparent; color: var(--primary-500); font-size: 14px !important; border: 1px solid var(--primary-500); padding: 10px 20px; border-radius: 8px; transition: all ease-in-out .3s; }
 .btn-line span { color: var(--primary-500); transition: all ease-in-out .3s; }
 .btn-line:hover span { color: var(--branco); }
 .btn-line:hover { color: var(--branco); background-color: var(--primary-500); border-color: var(--branco); font-weight: 600; }
@@ -86,10 +86,10 @@ button { border: none; }
 
 /* SECTION CURSOS */
 #cursos { background-color: var(--cinza); }
-#cursos span { font-size: 10px; }
-#cursos h2 { color: var(--primary-500) !important; font-size: 24px !important; font-weight: bold !important; line-height: 150% !important; }
-#cursos p { color: var(--secondary-500) !important; font-size: 16px !important; font-weight: bold !important; line-height: 150% !important; }
-#cursos .cards-cursos { background-color: var(--branco); width: 100%px; border-radius: 8px; overflow: hidden;  }
+#cursos span { font-size: 12px; }
+#cursos h2 { color: var(--primary-500) !important; font-size: 35px !important; font-weight: bold !important; line-height: 150% !important;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); }
+#cursos p { color: var(--secondary-500) !important; font-size: 16px !important; font-weight: bold !important; line-height: 150% !important; min-height: 125px; }
+#cursos .cards-cursos { background-color: var(--branco); width: 100%px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  }
 #cursos .cards-cursos img { width: 100%; height: 200px; object-fit: cover; }
 #cursos .content-cards-cursos { padding: 30px 20px; }
 
