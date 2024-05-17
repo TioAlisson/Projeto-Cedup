@@ -111,170 +111,66 @@
 
   <section id="cursos" class="spacing">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h1>Todos os nossos cursos disponíveis!</h1>
-          <h2 class="mt-5">Pós Médio</h2>
+      <div class="row justify-content-between">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <select id="cursosSelector" class="form-select mb-3">
+            <option value="emiep">EMIEP</option>
+            <option value="pos-medio">Pós Médio</option>
+          </select>
         </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 INFORMÁTICA</span>
-              <p class="mt-4">Profissional de informática orienta usuários e opera softwares básicos, com noções de programação e integração.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
+      </div>
+      <div>
+        <div class="tab-content mt-3" id="cursosContent">
+          <div class="tab-pane fade show active" id="emiep" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-12">
+                  <h1 class="text-center">CUSOS EMIEP</h1>
+                </div>
+                <div class="col-lg-4 mt-5">
+                  <div class="cards-cursos">
+                    <img src="../assets/img/Informatica.jpg" alt="">
+                    <div class="py-3 text-center text-lg-start content-cards-cursos">
+                      <span>📁 EMIEP</span>
+                      <p class="mb-4 mt-3">INFORMÁTICA</p>             
+                      <div>
+                       <a href="#" class="btn btn-line" data-bs-toggle="modal" data-bs-target="#card-modal-01">
+                        Ler mais <span class="ms-3"> > </span>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="modal fade" id="card-modal-01" tabindex="-1" aria-labelledby="card-label-01" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+              </div>
           </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 SEGURANÇA DO TRABALHO</span>
-              <p class="mt-4">Profissional especializado em melhorar a segurança e higiene no trabalho através de mudanças tecnológicas no processo produtivo.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
+          <div class="tab-pane fade" id="pos-medio" role="tabpanel">
+              <div class="row g-3">
+                <div class="col-12">
+                  <h1 class="text-center">CUSOS PÓS MÉDIO</h1>
+                </div>
+                <div class="col-lg-4 mt-5">
+                  <div class="cards-cursos">
+                    <img src="../assets/img/Informatica.jpg" alt="">
+                    <div class="py-3 text-center text-lg-start content-cards-cursos">
+                      <span>📁 PÓS MÉDIO</span>
+                      <p class="mb-4 mt-3">INFORMÁTICA</p>             
+                      <div>
+                       <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
+                    </div>
+                   </div>
+                  </div>
+               </div>
+              </div>
           </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 SAÚDE BUCAL</span>
-              <p class="mt-4">Profissional dedicado à saúde bucal, atuando na prevenção, promoção e recuperação, tanto em consultórios/ clínicas como na rede pública.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 EDIFICAÇÕES</span>
-              <p class="mt-4">Profissional técnico em construção civil lidera projetos, obras e manutenção, assegurando economia, conforto e segurança.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 ENFERMAGEM</span>
-              <p class="mt-4">Profissional de saúde comprometido a prevenção, tratamento e reabilitação, seguindo padrões éticos, legais e de qualidade, em estabelecimentos de saúde.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 CONTABILIDADE</span>
-              <p class="mt-4">Profissional capacitado em Contabilidade, aplica normas técnicas para planejar, organizar e controlar o patrimônio empresarial.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 ANÁLISES QUÍMICAS</span>
-              <p class="mt-4">Profissional em Análises Químicas atua na indústria, focado em controle de qualidade e solução de problemas físico-químicos.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 ADMINISTRAÇÃO</span>
-              <p class="mt-4">Profissional com habilidades em liderança, organização e análise. Apto para trabalhar em equipe ou empreender seu próprio negócio.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-12 text-center pt-5 mt-5">
-          <h2>EMIEP</h2>
-        </div>
-        <div class="col-lg-4 py-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 INFORMÁTICA</span>
-              <p class="mt-4">Habilidades em Redes, Banco de Dados, Web e Desenvolvimento de Software</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 BIOTECNOLOGIA</span>
-              <p class="mt-4">Técnico em atividades laboratoriais e industriais.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 RECURSOS HUMANOS</span>
-              <p class="mt-4">Especialista em planejamento e gestão de RH</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 SANEAMENTO</span>
-              <p class="mt-4">Planejamento, execução e manutenção de obras de Saneamento.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-5">
-          <div class="cards-cursos">
-            <img src="../assets/img/Informatica.jpg" alt="">
-            <div class="py-3 text-center text-lg-start content-cards-cursos">
-              <span>📁 QUÍMICA</span>
-              <p class="mt-4">Atua com eficiência, controle e qualidade, com processos químicos e físicos.</p>             
-              <div>
-               <a class="btn-line" href="">Ler mais <span class="ms-3"> > </span></a>
-            </div>
-           </div>
-          </div>
-        </div>
+      </div>
       </div>
     </div>
   </section>

@@ -81,3 +81,40 @@ window.addEventListener('scroll', function(){
         remove_class_on_scroll();
     }
 });
+
+// SELECT CURSOS
+document.addEventListener("DOMContentLoaded", function () {
+  const cursosSelector = document.getElementById('cursosSelector');
+  const tabContent = document.getElementById('cursosContent');
+
+  cursosSelector.addEventListener('change', function (event) {
+      const selectedValue = event.target.value;
+
+      const tabPanes = tabContent.querySelectorAll('.tab-pane');
+      tabPanes.forEach(function (tabPane) {
+          tabPane.classList.remove('show', 'active');
+      });
+      
+      const targetTabPane = document.getElementById(selectedValue);
+      if (targetTabPane) {
+          targetTabPane.classList.add('show', 'active');
+      }
+  });
+});document.addEventListener("DOMContentLoaded", function () {
+    const cursosSelector = document.getElementById('cursosSelector');
+    const tabContent = document.getElementById('cursosContent');
+
+    cursosSelector.addEventListener('change', function (event) {
+        const selectedValue = event.target.value;
+
+        const tabPanes = tabContent.querySelectorAll('.tab-pane');
+        tabPanes.forEach(function (tabPane) {
+            tabPane.classList.remove('show', 'active');
+        });
+        
+        const targetTabPane = document.getElementById(selectedValue);
+        if (targetTabPane) {
+            targetTabPane.classList.add('show', 'active');
+        }
+    });
+});

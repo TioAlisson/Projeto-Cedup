@@ -20,6 +20,7 @@ html, body { font-family: var(--font-primary), sans-serif !important; overflow-x
 ::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);-webkit-border-radius: 10px;border-radius: 10px}
 ::-webkit-scrollbar-thumb {-webkit-border-radius: 10px;border-radius: 10px;background: #999;-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)}
 ::-webkit-scrollbar-thumb:window-inactive {background: #999;}
+.form-select:focus { border-color: none; outline: none; box-shadow: none; border: none; }
 
 /* STYLE SHEETS */ 
 a { text-decoration: none !important; }
@@ -88,8 +89,8 @@ button { border: none; }
 #cursos { background-color: var(--cinza); }
 #cursos span { font-size: 12px; }
 #cursos h2 { color: var(--primary-500) !important; font-size: 35px !important; font-weight: bold !important; line-height: 150% !important;  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); }
-#cursos p { color: var(--secondary-500) !important; font-size: 16px !important; font-weight: bold !important; line-height: 150% !important; min-height: 125px; }
-#cursos .cards-cursos { background-color: var(--branco); width: 100%px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  }
+#cursos p { color: var(--secondary-500) !important; font-size: 16px !important; font-weight: bold !important; line-height: 150% !important; }
+#cursos .cards-cursos { background-color: var(--branco); width: 100%px; border-radius: 8px; overflow: hidden; box-shadow: 0px 0px 5px rgb(0 0 0 / 25%);  }
 #cursos .cards-cursos img { width: 100%; height: 200px; object-fit: cover; }
 #cursos .content-cards-cursos { padding: 30px 20px; }
 
@@ -127,21 +128,24 @@ footer .text-content { min-width: 160px; }
 
 #assinatura p { font-size: 14px; }
 
-/* CONTATO */
+/* PAGE CONTATO */
 #contato h2 { font-size: 36px !important; }
 #contato span { max-width: 350px; }
 #contato .links-contato a { display: flex; align-items: center; padding: 20px 0px; color: var(--preto); }
 #contato .links-contato a span { margin-left: 20px; }
 #contato .contato-iframe { width: 100%; height: 410px; }
 
-/* FALE CEDUP */
+/* PAGE FALE CEDUP */
 #fale-cedup p { color: var(--preto); font-weight: 400;  }
 #fale-cedup { background-color: var(--cinza); }
 #fale-cedup .input-contato { display: flex; align-items: center; border-bottom: 1px solid var(--secondary-400); padding: 0px 14px 18px 14px; margin-bottom: 32px;  }
 
-/* DOC */
+/* PAGE DOC */
 #estagio .table-doc td { padding: 16px 20px; }
 #estagio .table-doc tr:nth-child(even) { background-color: var(--cinza); }
+
+/* PAGE CURSOS */
+
 
 /* MEDIA QUERY */
 @media only screen and (max-device-width: 1400px), screen and (max-width: 1400px) {
