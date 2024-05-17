@@ -162,7 +162,8 @@ footer .text-content { min-width: 160px; }
     #slide .carousel-control-prev, #slide .carousel-control-next { width: 50% !important; } 
 
     /* SOBRE */
-    #sobre img { width: 80%; margin-left: auto; margin-right: auto; }
+    #sobre .img-sobre { width: 80%; margin-left: auto; margin-right: auto; }
+    #sobre h1 { font-size: 36px !important; }
 
     /* CONTATO */
     #contato .contato-iframe { height: 250px; }
