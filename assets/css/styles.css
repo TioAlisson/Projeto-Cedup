@@ -95,7 +95,7 @@ button { border: none; }
 
 
 /* SECTION SOBRE */
-#sobre img { filter: drop-shadow(5px -5px 5px #696969); }
+#sobre .img-sobre { filter: drop-shadow(5px -5px 5px #696969); }
 
 /* SECTION EQUIPE GESTORA */
 #gestora .card-equipe img { width: 100%; height: 180px; object-fit: cover; object-position: center; } 
