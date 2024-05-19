@@ -47,9 +47,13 @@ button { border: none; }
 #menu .navbar-toggler svg { width: 75px; height: 75px; transition: all .4s ease-in-out; }
 #menu .navbar-toggler:hover svg { opacity: 0.8 !important; transition:  all ease-in-out .4s; } 
 #menu .navbar-toggler:focus { outline: 0; box-shadow: none; }
-.nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 0px !important; transition:  all ease-in-out .2s; }
+.nav-link { color: var(--branco) !important; text-decoration: none !important; font-size: 20px !important; font-weight: bold !important; line-height: 30px; letter-spacing: 0.2px; padding: 0px 0px !important; transition:  all ease-in-out .2s; border-bottom: 5px solid transparent; }
 #menu .nav-item { padding: 0px 20px; }
 #menu .active, .nav-link:hover { border-bottom: 5px solid var(--primary-500); }
+.dropdown-menu { background-color: #1d1b1c; margin-left: 18px; }
+.dropdown-item { width: fit-content; font-size: 18px !important; }  
+.dropdown-item:focus, .dropdown-item:hover { color: var(--branco); background-color: #1d1b1c; }
+
 
 /* NAV COMPRESSED */
 .compressed .navbar { background-color: var(--secondary-rgba) !important; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
@@ -139,12 +143,14 @@ footer .text-content { min-width: 160px; }
 #fale-cedup p { color: var(--preto); font-weight: 400;  }
 #fale-cedup { background-color: var(--cinza); }
 #fale-cedup .input-contato { display: flex; align-items: center; border-bottom: 1px solid var(--secondary-400); padding: 0px 14px 18px 14px; margin-bottom: 32px;  }
+.font-mvv { font-size: 32px !important; }
 
 /* PAGE DOC */
 #estagio .table-doc td { padding: 16px 20px; }
 #estagio .table-doc tr:nth-child(even) { background-color: var(--cinza); }
 
 /* PAGE CURSOS */
+
 
 
 /* MEDIA QUERY */
